@@ -11,6 +11,7 @@ const CreateEmployee = () => {
   return (
     <div className={styles.employeeForm}>
       <h1>Employee Form</h1>
+      <h6>hii</h6>
       <div>
         <form onSubmit={handleSubmit}>
           {/* NAME SECTION */}
