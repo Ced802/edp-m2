@@ -95,8 +95,12 @@ const CreateEmployee = () => {
             </div>
           </div>
           <div className={styles.button}>
+            <div>
             <Button>Cancel</Button>
+            </div>
+            <div>
             <Button>Create Employee</Button>
+            </div>
           </div>
         </form>
       </div>

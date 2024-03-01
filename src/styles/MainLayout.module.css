@@ -1,7 +1,6 @@
 .mainlayout {
     display: flex;
-    height: 100vh;
-    overflow: hidden;
+    height:100vh;
 }
 
 .sidebarContainer {
