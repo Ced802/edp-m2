@@ -1,0 +1,17 @@
+.mainlayout {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebarContainer {
+    flex:20%;
+    background-color: #355738;
+    
+}
+
+.contentContainer {
+    flex:80%;
+    background-color: #E7EFE6;
+    ;
+}
