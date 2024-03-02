@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/CreateEmployee.module.css";
 import Button from '../components/Button';
+import DesignationOption from '../components/DesignationOption';
 
 const CreateEmployee = () => {
+  const [selectedDepartment, setSelectedDepartment] = useState('');
+
+  const handleDepartmentChange = (event) => {
+    setSelectedDepartment(event.target.value);
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault();
     // handle form submission here
@@ -57,20 +64,18 @@ const CreateEmployee = () => {
             <div classname={styles.designationContainer}>
               <div className={styles.designationBlock}>
                 <span><label for='department'>Department</label></span>
-                <select id="department" name="department">
-                  <option value="IT">IT</option>
-                  <option value="HR">HR</option>
+                <select id="department" name="department" onChange={handleDepartmentChange}>
+                  <option value="InformationTechnology">Information Technology</option>
+                  <option value="HumanResources">Human Resources</option>
                   <option value="Finance">Finance</option>
                   <option value="Marketing">Marketing</option>
+                  <option value="Sales">Sales</option> 
                 </select>
               </div>
               <div className={styles.designationBlock}>
                 <span><label for='designation'>Designation</label></span>
                 <select id="designation" name="designation">
-                  <option value="IT">IT</option>
-                  <option value="HR">HR</option>
-                  <option value="Finance">Finance</option>
-                  <option value="Marketing">Marketing</option>
+                    <DesignationOption department={selectedDepartment} />
                 </select>
               </div>
               <div className={styles.designationBlock}>

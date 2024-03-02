@@ -12,8 +12,8 @@ const MainLayout = () => {
                 <Sidebar />
             </div>
             <div className={styles.contentContainer}>
-                <CreateEmployee />
-                {/* <EmployeeList /> */}
+                {/* <CreateEmployee /> */}
+                <EmployeeList />
             </div>
         </div>
     </>

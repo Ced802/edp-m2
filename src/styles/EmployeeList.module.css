@@ -1,0 +1,33 @@
+.employeeListContainer {
+    margin: 0px 40px;  
+    color: #0D3D12;
+}
+
+.employeeListContainer h1 {
+    margin: 30px 0px;
+    text-align: justify;
+    font-size: 60px;
+}
+
+.topBar {
+    display: flex;
+    align-items: center;
+}
+
+.table {
+    border: 1px solid #0D3D12;
+}
+.tableHeader {
+    background-color: #9CC199;
+}
+
+.tableHeader th {
+    width: 10%;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.tableBody {
+    background-color: #DBF9D8;
+    ;
+}
