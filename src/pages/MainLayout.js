@@ -10,10 +10,7 @@ const MainLayout = () => {
   const handleSelection = (value) => {
     setContent(value);
   }
-  // const handleSelection = (value) => {
-  //   console.log(value);
-  // };
-
+  
   return (
     <>
         <div className={styles.mainlayout}>
