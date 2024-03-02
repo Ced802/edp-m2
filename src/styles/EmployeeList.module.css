@@ -11,12 +11,13 @@
 
 .topBar {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .table {
-    border: 1px solid #0D3D12;
+    text-align: center;
 }
+
 .tableHeader {
     background-color: #9CC199;
 }
@@ -24,10 +25,33 @@
 .tableHeader th {
     width: 10%;
     padding: 10px 30px;
-    text-align: center;
 }
 
 .tableBody {
     background-color: #DBF9D8;
-    ;
+}
+
+.tableBody td {
+    background-color: #DBF9D8;
+    padding: 5px;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.searchBar p {
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+.searchBar input {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #0D3D12;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #E7EFE6;
 }

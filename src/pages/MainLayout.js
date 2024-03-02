@@ -1,19 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/MainLayout.module.css';
 import Sidebar from '../components/Sidebar';
 import CreateEmployee from './CreateEmployee';
 import EmployeeList from './EmployeeList';
 
 const MainLayout = () => {
+  const [content, setContent] = useState('Employeelist');
+
+  const handleSelection = (value) => {
+    setContent(value);
+  }
+  // const handleSelection = (value) => {
+  //   console.log(value);
+  // };
+
   return (
     <>
         <div className={styles.mainlayout}>
             <div className={styles.sidebarContainer}>
-                <Sidebar />
+                <Sidebar onSelection={handleSelection}/>
             </div>
             <div className={styles.contentContainer}>
-                {/* <CreateEmployee /> */}
-                <EmployeeList />
+            {content === 'Employeelist' ? <EmployeeList /> : <CreateEmployee />}
             </div>
         </div>
     </>
